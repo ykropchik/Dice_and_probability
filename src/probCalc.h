@@ -5,8 +5,9 @@
 class probabilityCalculator {
 private:
     long double **decision;
+    unsigned int maxThrows;
 
 public:
-    probabilityCalculator(unsigned int maxThrows);
-    long double probability(unsigned int throws, unsigned int summ);
+    explicit probabilityCalculator(unsigned int maxThrows);
+    long double calculate(unsigned int throws, unsigned int summ);
 };

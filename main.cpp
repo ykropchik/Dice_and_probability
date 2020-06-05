@@ -2,6 +2,8 @@
 #include "src/probCalc.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    auto test = probabilityCalculator(200);
+
+    std::cout << test.calculate(100, 100);
     return 0;
 }
